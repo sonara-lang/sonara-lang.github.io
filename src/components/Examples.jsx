@@ -10,21 +10,49 @@ const EXAMPLES = [
     description: 'Op. 27 No. 2 — Adagio sostenuto in C# minor',
     code: `tempo 54
 scale Csharp_minor
-transpose -1
 
 import movement1`,
-    snippet: `section movement1 {
+    snippet: `section opening {
   chords {
-    C#m | C#m | G#m | G#m
+    C#m | C#m | C#m | C#m | C#m
+    F#m | G# | C#m | C#m
+    C#m | C#m | C#m | C#m | C#m
+    F#m | G# | C#m | C#m
+    A | E | F#m | G# | C#m
   }
 
   bass {
-    C#w2 C#w2 G#w2 G#w2
+    C#w2 C#w2 C#w2 C#w2 C#w2
+    F#w2 G#w2 C#w2 C#w2
+    C#w2 C#w2 C#w2 C#w2 C#w2
+    F#w2 G#w2 C#w2 C#w2
+    Aw2 Ew2 F#w2 G#w2 C#w2
   }
 
   melody {
-    G#e3 C#e4 Ee4 G#e3 C#e4 Ee4 G#e3 C#e4
-    G#e3 C#e4 Ee4 G#e3 C#e4 Ee4 G#e3 C#e4
+    G#t3 C#t4 Et4 G#t3 C#t4 Et4 G#t3 C#t4 Et4 G#t3 C#t4 Et4
+    G#t3 C#t4 Et4 G#t3 C#t4 Et4 G#t3 C#t4 Et4 G#t3 C#t4 Et4
+    G#t3 C#t4 Et4 G#t3 C#t4 Et4 G#t3 C#t4 Et4 G#t3 C#t4 Et4
+    G#t3 C#t4 Et4 G#t3 C#t4 Et4 G#t3 C#t4 Et4 G#t3 C#t4 Et4
+    G#t3 C#t4 Et4 G#t3 C#t4 Et4 G#t3 C#t4 Et4 G#t3 C#t4 Et4
+    F#t3 At3 C#t4 F#t3 At3 C#t4 F#t3 At3 C#t4 F#t3 At3 C#t4
+    G#t3 B#t3 D#t4 G#t3 B#t3 D#t4 G#t3 B#t3 D#t4 G#t3 B#t3 D#t4
+    G#t3 C#t4 Et4 G#t3 C#t4 Et4 G#t3 C#t4 Et4 G#t3 C#t4 Et4
+    G#t3 C#t4 Et4 G#t3 C#t4 Et4 G#t3 C#t4 Et4 G#t3 C#t4 Et4
+    G#t3 C#t4 Et4 G#t3 C#t4 Et4 G#t3 C#t4 Et4 G#t3 C#t4 Et4
+    G#t3 C#t4 Et4 G#t3 C#t4 Et4 G#t3 C#t4 Et4 G#t3 C#t4 Et4
+    G#t3 C#t4 Et4 G#t3 C#t4 Et4 G#t3 C#t4 Et4 G#t3 C#t4 Et4
+    G#t3 C#t4 Et4 G#t3 C#t4 Et4 G#t3 C#t4 Et4 G#t3 C#t4 Et4
+    G#t3 C#t4 Et4 G#t3 C#t4 Et4 G#t3 C#t4 Et4 G#t3 C#t4 Et4
+    F#t3 At3 C#t4 F#t3 At3 C#t4 F#t3 At3 C#t4 F#t3 At3 C#t4
+    G#t3 B#t3 D#t4 G#t3 B#t3 D#t4 G#t3 B#t3 D#t4 G#t3 B#t3 D#t4
+    G#t3 C#t4 Et4 G#t3 C#t4 Et4 G#t3 C#t4 Et4 G#t3 C#t4 Et4
+    G#t3 C#t4 Et4 G#t3 C#t4 Et4 G#t3 C#t4 Et4 G#t3 C#t4 Et4
+    At3 C#t4 Et4 At3 C#t4 Et4 At3 C#t4 Et4 At3 C#t4 Et4
+    Et3 G#t3 Bt3 Et3 G#t3 Bt3 Et3 G#t3 Bt3 Et3 G#t3 Bt3
+    F#t3 At3 C#t4 F#t3 At3 C#t4 F#t3 At3 C#t4 F#t3 At3 C#t4
+    G#t3 B#t3 D#t4 G#t3 B#t3 D#t4 G#t3 B#t3 D#t4 G#t3 B#t3 D#t4
+    G#t3 C#t4 Et4 G#t3 C#t4 Et4 G#t3 C#t4 Et4 G#t3 C#t4 Et4
   }
 }`,
   },
@@ -32,29 +60,103 @@ import movement1`,
     title: 'Jingle Bells',
     author: 'J. Pierpont',
     year: '1857',
-    audio: '/audio/christmas.mp3',
+    audio: '/audio/jingle_bells.mp3',
     description: 'Traditional Christmas carol in C major',
     code: `tempo 120
 scale C_major
 
-import verse
-import chorus
-import outro`,
+section verse { ... }
+section chorus { ... }
+section outro { ... }`,
     snippet: `section verse {
   chords {
+    C | C | C | G
     C | C | F | G
-    C | C | G | G
+  }
+
+  bass {
+    Cw2 Cw2 Cw2 Gw2
+    Cw2 Cw2 Fw2 Gw2
   }
 
   melody {
-    E4 E4 E4 E4
+    E4 E4 Eh4
     E4 G4 C4 D4
-    E4 E4 E4 E4
+    E4 D4 C4 D4
+    G4 G4 Gh4
+    E4 E4 Eh4
+    G4 G4 Gh4
+    A4 G4 F4 E4
+    Dh4 Gh3
   }
 
   drums {
     kick hihat snare hihat
     kick hihat snare hihat
+    kick hihat snare hihat
+    kick hihat snare hihat
+    kick hihat snare hihat
+    kick hihat snare hihat
+    kick hihat snare hihat
+    kick hihat snare hihat
+  }
+}
+
+section chorus {
+  chords {
+    C | C | C | G
+    F | C | G | C
+  }
+
+  bass {
+    Cw2 Cw2 Cw2 Gw2
+    Fw2 Cw2 Gw2 Cw2
+  }
+
+  melody {
+    E4 E4 Eh4
+    E4 E4 Eh4
+    E4 G4 C4 D4
+    Eh4 Rh
+    F4 F4 F4 F4
+    F4 E4 E4 E4
+    G4 G4 F4 D4
+    Ch4 Rh
+  }
+
+  drums {
+    kick hihat snare hihat
+    kick hihat snare hihat
+    kick hihat snare hihat
+    kick hihat snare hihat
+    kick hihat snare hihat
+    kick hihat snare hihat
+    kick hihat snare hihat
+    kick hihat snare hihat
+  }
+}
+
+section outro {
+  chords {
+    C | F | G7 | C
+  }
+
+  bass {
+    Cw2 Fw2 Gw2 Cw2
+  }
+
+  melody {
+    Eh4 Gh4
+    Ah4 Fh4
+    Dh4 Bh4
+    Cw4
+  }
+
+  drums {
+    kick snare kick snare
+    kick snare kick snare
+    kick snare kick snare
+    kick snare kick snare
   }
 }`,
   },
