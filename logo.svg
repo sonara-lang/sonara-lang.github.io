@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 72" height="72" fill="none">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@700&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- Music emoji substitute: unicode note rendered as text -->
+  <text x="0" y="56" font-size="52">🎵</text>
+
+  <!-- Sonara in Syncopate -->
+  <text
+    x="68" y="54"
+    font-family="'Syncopate', sans-serif"
+    font-size="44"
+    font-weight="700"
+    fill="white"
+    letter-spacing="4"
+  >SONARA</text>
+</svg>
