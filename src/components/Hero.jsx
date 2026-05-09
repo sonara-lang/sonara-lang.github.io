@@ -96,11 +96,11 @@ export default function Hero() {
         <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-indigo-900/10 rounded-full blur-[100px] pointer-events-none" />
 
         {/* Nav */}
-        <nav className="relative z-10 flex items-center justify-between px-6 py-5 max-w-7xl mx-auto w-full">
-          <div className="flex items-center">
+        <nav className="relative z-10 flex flex-col sm:flex-row items-center sm:justify-between px-6 py-5 max-w-7xl mx-auto w-full gap-4 sm:gap-0">
+          <div className="flex items-center justify-center sm:justify-start w-full sm:w-auto">
             <Logo size="md" />
           </div>
-          <div className="flex items-center gap-6 text-sm text-slate-400">
+          <div className="flex items-center justify-center gap-6 text-sm text-slate-400 w-full sm:w-auto">
             <a href="#examples" className="hover:text-white transition-colors">Examples</a>
             <a href="#install" className="hover:text-white transition-colors">Install</a>
             <a
@@ -117,15 +117,10 @@ export default function Hero() {
 
         {/* Hero content */}
         <div className="relative z-10 flex-1 flex items-center">
-          <div className="max-w-7xl mx-auto px-6 w-full grid lg:grid-cols-2 gap-16 items-center py-20">
+          <div className="max-w-7xl mx-auto px-6 w-full grid lg:grid-cols-2 gap-16 items-center py-1 lg:py-20">
 
             {/* Left */}
             <div>
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-violet-950/60 border border-violet-700/40 rounded-full text-violet-300 text-xs font-medium mb-8">
-                <span className="w-1.5 h-1.5 rounded-full bg-violet-400 animate-pulse" />
-                Open source · Public domain examples
-              </div>
-
               <h1 className="text-6xl lg:text-7xl font-black tracking-tight text-white mb-6 leading-[0.95]">
                 Compose<br />
                 music<br />
